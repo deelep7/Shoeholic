@@ -1,0 +1,275 @@
+2024-08-12T15:40:19+00:00 INFO Webhook could not be configured during connect process. PayPal does not allow webhooks where the domain is localhost.
+2024-08-12T15:51:22+00:00 ERROR API error: Array
+(
+    [url] => https://api-m.paypal.com/v2/checkout/orders
+    [method] => POST
+    [http_status] => 422
+    [request] => Array
+(
+    [intent] => CAPTURE
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => Alfreda
+                    [surname] => Casey
+                )
+
+            [address] => Array
+                (
+                    [address_line_1] => 76 North Milton Parkway
+                    [address_line_2] => 
+                    [admin_area_1] => BAG
+                    [admin_area_2] => Id non labore veniam
+                    [postal_code] => 
+                    [country_code] => NP
+                )
+
+            [email_address] => jozula@mailinator.com
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [amount] => Array
+                        (
+                            [value] => 6500.00
+                            [currency_code] => NPR
+                            [breakdown] => Array
+                                (
+                                    [item_total] => Array
+                                        (
+                                            [currency_code] => NPR
+                                            [value] => 6500.00
+                                        )
+
+                                    [shipping] => Array
+                                        (
+                                            [currency_code] => NPR
+                                            [value] => 0.00
+                                        )
+
+                                    [tax_total] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => NPR
+                                        )
+
+                                    [discount] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => NPR
+                                        )
+
+                                    [handling] => Array
+                                        (
+                                            [currency_code] => NPR
+                                            [value] => 0.00
+                                        )
+
+                                )
+
+                        )
+
+                    [items] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => Adidas Bad Bunny
+                                    [quantity] => 1
+                                    [unit_amount] => Array
+                                        (
+                                            [currency_code] => NPR
+                                            [value] => 6500.00
+                                        )
+
+                                    [sku] => 93
+                                    [description] => Product ID: 93
+                                )
+
+                        )
+
+                    [shipping] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [full_name] => Alfreda Casey
+                                )
+
+                            [address] => Array
+                                (
+                                    [address_line_1] => 76 North Milton Parkway
+                                    [address_line_2] => 
+                                    [admin_area_1] => BAG
+                                    [admin_area_2] => Id non labore veniam
+                                    [postal_code] => 
+                                    [country_code] => NP
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [application_context] => Array
+        (
+            [shipping_preference] => SET_PROVIDED_ADDRESS
+            [return_url] => http://localhost/wordpress/index.php/wc-api/ppcp_checkout_return/?_checkoutnonce=62d97500b7
+            [cancel_url] => http://localhost/wordpress/index.php/checkout/
+            [brand_name] => Shoeholic
+        )
+
+)
+
+    [error] => Array
+        (
+            [name] => UNPROCESSABLE_ENTITY
+            [details] => Array
+                (
+                    [0] => Array
+                        (
+                            [issue] => CURRENCY_NOT_SUPPORTED
+                            [links] => Array
+                                (
+                                )
+
+                            [description] => Currency code is not currently supported. Please refer https://developer.paypal.com/docs/integration/direct/rest/currency-codes/ for list of supported currency codes.
+                        )
+
+                )
+
+            [message] => The requested action could not be performed, semantically incorrect, or failed business validation.
+            [debug_id] => 4b7b8203b861e
+            [links] => Array
+                (
+                    [0] => Array
+                        (
+                            [href] => https://developer.paypal.com/docs/api/orders/v2/#error-CURRENCY_NOT_SUPPORTED
+                            [rel] => information_link
+                        )
+
+                )
+
+        )
+
+)
+2024-08-12T15:51:22+00:00 ERROR Error creating PayPal order. Msg: Currency code is not currently supported. Please refer https://developer.paypal.com/docs/integration/direct/rest/currency-codes/ for list of supported currency codes. Params: Array
+(
+    [intent] => CAPTURE
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => Alfreda
+                    [surname] => Casey
+                )
+
+            [address] => Array
+                (
+                    [address_line_1] => 76 North Milton Parkway
+                    [address_line_2] => 
+                    [admin_area_1] => BAG
+                    [admin_area_2] => Id non labore veniam
+                    [postal_code] => 
+                    [country_code] => NP
+                )
+
+            [email_address] => jozula@mailinator.com
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [amount] => Array
+                        (
+                            [value] => 6500.00
+                            [currency_code] => NPR
+                            [breakdown] => Array
+                                (
+                                    [item_total] => Array
+                                        (
+                                            [currency_code] => NPR
+                                            [value] => 6500.00
+                                        )
+
+                                    [shipping] => Array
+                                        (
+                                            [currency_code] => NPR
+                                            [value] => 0.00
+                                        )
+
+                                    [tax_total] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => NPR
+                                        )
+
+                                    [discount] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => NPR
+                                        )
+
+                                    [handling] => Array
+                                        (
+                                            [currency_code] => NPR
+                                            [value] => 0.00
+                                        )
+
+                                )
+
+                        )
+
+                    [items] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => Adidas Bad Bunny
+                                    [quantity] => 1
+                                    [unit_amount] => Array
+                                        (
+                                            [currency_code] => NPR
+                                            [value] => 6500.00
+                                        )
+
+                                    [sku] => 93
+                                    [description] => Product ID: 93
+                                )
+
+                        )
+
+                    [shipping] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [full_name] => Alfreda Casey
+                                )
+
+                            [address] => Array
+                                (
+                                    [address_line_1] => 76 North Milton Parkway
+                                    [address_line_2] => 
+                                    [admin_area_1] => BAG
+                                    [admin_area_2] => Id non labore veniam
+                                    [postal_code] => 
+                                    [country_code] => NP
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [application_context] => Array
+        (
+            [shipping_preference] => SET_PROVIDED_ADDRESS
+            [return_url] => http://localhost/wordpress/index.php/wc-api/ppcp_checkout_return/?_checkoutnonce=62d97500b7
+            [cancel_url] => http://localhost/wordpress/index.php/checkout/
+            [brand_name] => Shoeholic
+        )
+
+)
